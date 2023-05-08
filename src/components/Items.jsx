@@ -11,7 +11,7 @@ import { AiFillPlusCircle } from "react-icons/ai"
 
 const Items = () => (
   <section id='items' className='w-full text-center overflow-hidden'>
-    <div className='pink__gradient absolute -translate-x-1/2 left-1/2 sm:w-[500px] w-full h-[300px] opacity-30 z-0' />
+    <div className='pink__gradient absolute -translate-x-1/2 left-1/2 sm:w-[500px] w-full h-[300px] opacity-10 z-0' />
     <h1 className='text-3xl font-bold text-white mt-10'>Latest</h1>
     <Swiper
         className='flex justify-center items-center'

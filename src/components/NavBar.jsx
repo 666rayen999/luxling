@@ -3,16 +3,19 @@ import React from 'react'
 import { logo, close, menu } from '../assets'
 import { navlinks } from '../constants'
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar z-10'>
-      <img src={logo} alt='luxling' className='w-[24px] h-[24px]' />
+    <nav className='w-full flex py-6 justify-between items-center navbar'>
+      <Link to='/'>
+        <img src={logo} alt='luxling' className='w-[24px] h-[24px]' />
+      </Link>
       <ul className='list-none sm:flex hidden justify-end items-center'>
         {navlinks.map((nav, index) => (
           <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navlinks.length - 1 ? 'mr-0':'mr-10'} text-white`}>
-            <a href={`#${nav.id}`}>{nav.text}</a>
+            <Link to={`${nav.id}`}>{nav.text}</Link>
           </li>
         ))}
       </ul>
@@ -22,7 +25,7 @@ export default function NavBar() {
           <ul className='list-none flex flex-col justify-end items-end bg-primary w-full p-4 pr-8 shadow-2xl shadow-[#000a]'>
             {navlinks.map((nav, index) => (
               <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] my-3 text-white`}>
-                <a href={`#${nav.id}`}>{nav.text}</a>
+                <Link to={`${nav.id}`}>{nav.text}</Link>
               </li>
             ))}
           </ul>

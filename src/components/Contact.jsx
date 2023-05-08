@@ -13,8 +13,8 @@ const Contact = () => {
   }
   return (
   <section id='contact' className='relative flex p-6 flex-col justify-center items-center mt-16 mb-8'>
-    <div className='absolute -translate-y-1/1 sm:left-1/4 left-0 0 w-24 h-32 bg-[#64b] z-[1] sm:blur-[100vh] blur-[30vw]' />
-    <div className='absolute translate-y-1/1 sm:right-1/4 right-0 w-24 h-32 bg-[#64b] z-[1] sm:blur-[100vh] blur-[30vw]' />
+    <div className='absolute -translate-y-1/1 sm:left-1/4 left-0 0 w-24 h-32 bg-[#64b] opacity-30 z-[1] sm:blur-[100vh] blur-[30vw]' />
+    <div className='absolute translate-y-1/1 sm:right-1/4 right-0 w-24 h-32 bg-[#64b] opacity-30 z-[1] sm:blur-[100vh] blur-[30vw]' />
     <div className='flex sm:w-auto w-full flex-col items-center bg-item-gradient p-4 rounded-3xl z-[5]'>
       <h1 className='mb-4 text-white font-bold text-3xl'>Contact US</h1>
       <form className="contact-form flex sm:flex-row w-full flex-col sm:gap-8 gap-2" onSubmit={handleSubmit}>

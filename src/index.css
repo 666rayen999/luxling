@@ -145,12 +145,17 @@
 }
 
 .bg-item-gradient {
-  background: linear-gradient(#1c1632, #121022);
+  background: linear-gradient(#302555, #1b1935);
 }
 
 .round
 {
   border-radius: 100%;
+}
+
+.bg-dimm
+{
+  background-color: #251d4488;
 }
 
 .shdw

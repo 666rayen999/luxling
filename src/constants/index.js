@@ -5,11 +5,11 @@ const title = {
 
 const navlinks = [
     {
-        text: "Features",
-        id: "features"
+        text: "Generate",
+        id: "/gen"
     },{
-        text: "Contact",
-        id: "contact"
+        text: "Exemples",
+        id: "/ex"
     }
 ]
 
